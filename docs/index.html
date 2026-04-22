@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Government Branches Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🐱 Feed the Cat! 🐱</h1>
+        
+        <!-- Hungry Cat Section -->
+        <div class="cat-section">
+            <!-- Cat Container -->
+            <div class="cat-container">
+                <div class="cat" id="cat">
+                    <!-- Head -->
+                    <div class="cat-head">
+                        <!-- Left Ear -->
+                        <div class="cat-ear cat-ear-left"></div>
+                        <!-- Right Ear -->
+                        <div class="cat-ear cat-ear-right"></div>
+                        <!-- Eyes -->
+                        <div class="cat-eyes">
+                            <div class="cat-eye cat-eye-left"></div>
+                            <div class="cat-eye cat-eye-right"></div>
+                        </div>
+                        <!-- Mouth -->
+                        <div class="cat-mouth"></div>
+                    </div>
+                    <!-- Body -->
+                    <div class="cat-body"></div>
+                    <!-- Food Animation -->
+                    <div class="food" id="food">🍖</div>
+                </div>
+                <!-- Hunger Status -->
+                <div class="hunger-status">
+                    <p id="hungerText">Next meal in: <span id="hungerTimer">15</span>s</p>
+                    <div class="hunger-bar-container">
+                        <div class="hunger-bar" id="hungerBar"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Game Over Screen -->
+            <div class="game-over-screen" id="gameOverScreen">
+                <div class="game-over-content">
+                    <h2>Game Over! 😭</h2>
+                    <p>Your cat got too hungry and left...</p>
+                    <p>Final Score: <span id="finalScore">0</span>/0</p>
+                    <button class="restart-btn" onclick="location.reload()">Try Again</button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Flashcard Section -->
+        <div class="flashcard-section">
+            <div class="flashcard">
+                <div class="question-text" id="questionText">
+                    Click "Next Question" to start
+                </div>
+                
+                <div class="answer-options">
+                    <button class="option-btn" id="optionA">A</button>
+                    <button class="option-btn" id="optionB">B</button>
+                    <button class="option-btn" id="optionC">C</button>
+                </div>
+                
+                <div class="feedback" id="feedback"></div>
+                
+                <button class="next-btn" id="nextBtn">Next Question</button>
+            </div>
+            
+            <div class="stats">
+                <p>Correct: <span id="correctCount">0</span> | Total: <span id="totalCount">0</span></p>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
